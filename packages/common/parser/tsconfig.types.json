@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "outDir": "dist/types",
+    "declaration": true,
+    "moduleResolution": "node"
+  },
+  "include": ["./index.ts"]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "parser",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "scripts": {
+    "build": "tsc -b tsconfig.esm.json && tsc -b tsconfig.cjs.json && tsc -b tsconfig.types.json",
+    "build:esm": "tsc -b tsconfig.esm.json"
+  },
+  "exports": {
+    ".": {
+      "require": "./dist/cjs/index.cjs",
+      "import": "./dist/esm/index.mjs",
+      "types": "./dist/types/index.d.ts"
+    }
+  }
+}
