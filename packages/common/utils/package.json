@@ -1,0 +1,23 @@
+{
+	"name": "utils",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"build": "tsc -b tsconfig.esm.json && tsc -b tsconfig.cjs.json && tsc -b tsconfig.types.json"
+	},
+	"exports": {
+		".": {
+			"require": "./dist/cjs/index.cjs",
+			"import": "./dist/esm/index.mjs",
+			"types": "./dist/types/index.d.ts"
+		}
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"axios": "^1.7.7",
+		"parser": "file:../parser"
+	}
+}

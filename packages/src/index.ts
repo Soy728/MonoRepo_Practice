@@ -1,10 +1,7 @@
-// parser를 가져다 써보자.
-// import { parse } from "parser";
+import { parse } from 'parser';
+import add from 'utils';
 
-// const testParser = parse(30);
-// console.log(testParser);
+const testParser = parse('30');
+const testUtil = add('20', '40');
 
-const { parse } = require("parser");
-
-const testParser = parse(30);
-console.log(testParser);
+console.log(testParser, testUtil);

@@ -1,1 +1,1 @@
-export declare function parse(value: number): number;
+export declare function parse(value: string): number;

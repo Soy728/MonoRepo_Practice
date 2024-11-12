@@ -1,3 +1,3 @@
-export function parse(value: number) {
-  return value;
+export function parse(value: string) {
+	return Number(value);
 }
