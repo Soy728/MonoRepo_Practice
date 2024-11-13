@@ -1,8 +1,7 @@
 {
 	"name": "@common/parser",
 	"version": "1.0.0",
-	"main": "index.js",
-	"type": "module",
+	"main": "./src/index.ts",
 	"scripts": {
 		"build": "tsc",
 		"check-types": "tsc --noEmit"

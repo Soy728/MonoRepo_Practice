@@ -1,6 +1,11 @@
 {
 	"tasks": {
-		"build": {},
-		"check-types": {}
+		"build": {
+			"dependsOn": ["^build"]
+		},
+		"dev": {
+			"cache": false,
+			"persistent": true
+		}
 	}
 }

@@ -1,3 +1,6 @@
-export function parse(value) {
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.parse = parse;
+function parse(value) {
     return Number(value);
 }
