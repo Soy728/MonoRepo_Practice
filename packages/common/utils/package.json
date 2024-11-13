@@ -1,23 +1,18 @@
 {
-	"name": "utils",
+	"name": "@common/utils",
 	"version": "1.0.0",
 	"description": "",
 	"main": "index.js",
+	"type": "module",
 	"scripts": {
-		"build": "tsc -b tsconfig.esm.json && tsc -b tsconfig.cjs.json && tsc -b tsconfig.types.json"
+		"build": "tsc",
+		"check-types": "tsc --noEmit"
 	},
 	"exports": {
-		".": {
-			"require": "./dist/cjs/index.cjs",
-			"import": "./dist/esm/index.mjs",
-			"types": "./dist/types/index.d.ts"
-		}
+		".": "./src/index.ts"
 	},
-	"keywords": [],
-	"author": "",
-	"license": "ISC",
 	"dependencies": {
 		"axios": "^1.7.7",
-		"parser": "file:../parser"
+		"@common/parser": "workspace:*"
 	}
 }

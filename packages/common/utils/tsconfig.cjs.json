@@ -1,9 +1,0 @@
-{
-  "compilerOptions": {
-    "target": "ES6",
-    "outDir": "dist/cjs",
-    "module": "CommonJS",
-    "moduleResolution": "node"
-  },
-  "include": ["./index.ts"]
-}
